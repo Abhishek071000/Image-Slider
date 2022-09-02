@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img
+                        src="https://i0.wp.com/ramenswag.com/wp-content/uploads/2016/12/naruto-wallpaper-7.jpg?resize=1060%2C752&ssl=1"
+                        alt=""> </div>
+                <div class="swiper-slide"> <img src="https://images7.alphacoders.com/303/303042.png" alt=""> </div>
+                <div class=" swiper-slide"> <img
+                        src="https://wallpapers.com/images/high/neon-naruto-and-sasuke-72l1c263kigantfn.jpg" alt="">
+                </div>
+                <div class="swiper-slide"> <img
+                        src="https://coolthemestores.com/wp-content/uploads/2021/05/naruto-chibi-chrome-wallpaper-1.jpg">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper',{
+            autoplay:{
+                delay:3000,
+                disableOnInteraction:false,
+            },
+            loop:true,
+            pagination:{
+                el:'.swiper-pagination',
+                clickable:true,
+            },
+            navigation:{
+                nextEl:'.swiper-button-next',
+                prevEl:'.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+
+</html>
